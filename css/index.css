@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  background: black;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.js-logo {
+  display: flex;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.main-nav a {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-nav ul {
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.main-nav a:hover {
+  color: salmon;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.section-one {
+  width: 100%;
+  height: 43vw;
+  background: url("../img/camera.jpg") no-repeat; /* Photo by Jason Fahnkow from Pexels https://www.pexels.com/photo/black-and-white-black-background-camera-camera-equipment-1595244/*/
+  background-size: 100% auto;
+  background-position: bottom;
+  margin-bottom: 1rem;
+}
+
+.section-one-txt {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  margin-left: 5vh;
+}
+
+.section-one-txt h5 {
+  font-family: "Inconsolata", monospace;
+  margin-top: -5vw;
+  margin-left: 22vw;
+}
+
+.section-one-txt h2 {
+  margin-left: 10vw;
+}
+
+h5 span:nth-child(1) {
+  color: salmon;
+}
+
+h5 span:nth-child(2) {
+  color: #643173;
+}
+
+h5 span:nth-child(3) {
+  color: #86a59c;
+}
+
+h5 span:nth-child(4) {
+  color: #508ca4;
+}
+.heart {
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    color: red;
+  }
+}
+
+@keyframes border-anim {
+  from {
+    text-shadow: 1px 1px 1pxpx pink;
+  }
+  to {
+    text-shadow: 4px 4px 4px red;
+  }
+}
+
+.heart:hover {
+  animation: spin 3s alternate infinite;
+}
+
+.heart {
+  animation: border-anim 1s alternate infinite;
+}
+
+.section-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.s2-item {
+  width: 43vw;
+  text-align: center;
+  margin-bottom: -1rem;
+}
+
+.s2-img {
+  width: 43vw;
+  display: block;
+}
+
+.s2-text {
+  position: relative;
+  bottom: 5rem;
+
+  font-size: 2rem;
+  text-shadow: 1px 1px;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.s2-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-middle {
+  width: 13vw;
+  height: 14vw;
+  background: url("../img/logo_transparent.png") no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+.copy {
+  color: whitesmoke;
+}
+
+.year {
+  color: grey;
+  font-size: 1.1rem;
+}
+
+.js-design {
+  color: burlywood;
+  font-size: 1.2rem;
+}
+.copy,
+.year,
+.js-design {
+  font-family: "Anton", sans-serif;
+}
+
+.fab {
+  font-size: 4vw;
+}
+
+.fab:hover {
+  color: white;
+  font-size: 4.5vw;
+}
+
+.mirror {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+
+@media (max-width: 750px) {
+  .s2-item {
+    width: 100vw;
+  }
+
+  .s2-img {
+    width: 90vw;
+  }
+
+  .section-one-txt h5 {
+    margin-left: 5vw;
+    font-size: 0.7rem;
+  }
+
+  .section-one-txt h2 {
+    margin-left: 1vw;
+    font-size: 1.8rem;
+  }
+
+  .year {
+    font-size: 0.5rem;
+  }
+
+  .js-design {
+    font-size: 0.6rem;
+  }
+}
